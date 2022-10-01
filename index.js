@@ -59,7 +59,7 @@ objeto3 = {
 
 comida = []
 
-// Exercício 3
+// Exercício 3 - Semana 2
 
 // 3. Adicione os objetos criados no item 1, ao array de objetos criado no item 2, utilizando o push() .
 
@@ -70,6 +70,8 @@ console.log(comida)
 // Exercício 4 e // Exercício 5 - Semana 2
 
 // 4. Altere o item 3 “Adicione os novos objetos no array de objetos, utilizando o push()”, para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
+
+//5. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
 
 if (objeto1.fileComida === true){
     comida.push(objeto1)
@@ -93,7 +95,6 @@ console.log(comida)
 
 
 //--------------------------------------------------------//
-
 
 //Exercício 1 - Semana 3
 
@@ -174,7 +175,7 @@ function funcaoString(objetoString){
 
 funcaoString(objeto3);
 
-//Exercício 3 - Semana 4
+//Exercício 4 - Semana 3
 
 // 4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 
