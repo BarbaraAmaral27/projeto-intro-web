@@ -33,21 +33,21 @@
 // 1. Transforme os itens que criamos nas últimas semanas em objetos.
 
 objeto1 = {
-    nome : "Parmegiana",   
+    nome : "Parmegiana",
     valor:45.00,
     fileComida: true,
     opcoesPrato1:["Molho Bolonhesa"," Molho Branco"," Molho Madeira"]
 }
 
 objeto2 = {
-    nome : "Strogonoff",   
+    nome : "Strogonoff",
     valor:42.50,
     fileComida: false,
     opcoesPrato1:["Carne"," Frango"," Camarão"]
 }
 
 objeto3 = {
-    nome : "Filé com Legumes na manteiga",   
+    nome : "Filé com Legumes na manteiga",
     valor:65.00,
     fileComida: true,
     opcoesPrato1:["Filé de Frango"," Filé Mignon"]
@@ -103,22 +103,22 @@ console.log(comida)
 //Desta forma
 let comidaString = ""
 
-for (let i  = 0; i < objeto1.opcoesPrato1.length; i++){
-    comidaString += objeto1.opcoesPrato1[i] 
+for (let i = 0; i < objeto1.opcoesPrato1.length; i++){
+    comidaString += objeto1.opcoesPrato1[i]
 }
 console.log(comidaString)
 
 
 comidaString = ""
 for (let i  = 0; i < objeto2.opcoesPrato1.length; i++){
-    comidaString += objeto2.opcoesPrato1[i] 
+    comidaString += objeto2.opcoesPrato1[i]
 }
 console.log(comidaString)
 
 
 comidaString = ""
 for (let i  = 0; i < objeto3.opcoesPrato1.length; i++){
-    comidaString += objeto3.opcoesPrato1[i] 
+    comidaString += objeto3.opcoesPrato1[i]
 }
 console.log(comidaString)
 console.log("------------------------");
@@ -134,26 +134,19 @@ console.log("------------------------");
 
 //2. Ainda no relatório, altere-o para que ele seja criado utilizando laços. Ou seja, você não deve mais imprimir individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
 
-let arrayObjetosComida = [
-    {
-    nome : "Lagarto ao Molho Madeira",   
+objeto4 = {
+    nome : "Lagarto ao Molho Madeira",
     valor: 49.90,
     fileComida: false,
     opcoesPrato1: "Carne"
-    },
+}
 
-    {
-    nome: "Cupim Recheado",
-    valor: 69.90,
-    fileComida: false,
-    opcoesPrato1: "Carne"
-    }
-];
+comida.push(objeto4)
 
-console.log("Nome do Prato: " + arrayObjetosComida[1].nome);
+console.log("Nome do Prato: " + comida[1].nome);
 console.log("------------------------");
 
-for(comidas of arrayObjetosComida){
+for(comidas of comida){
     for (propriedade in comidas){
         console.log(`${propriedade}: ${comidas[propriedade]}`)
     }
@@ -172,27 +165,27 @@ function funcaoString(objetoString){
         console.log("------------------------");
     }
 
-
 funcaoString(objeto3);
 
 //Exercício 4 - Semana 3
 
 // 4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 
-function retornarObjetos(arrayObjetosComida, nomeString){
-let guardarNome = ""
-    for (comida of arrayObjetosComida) {
-        for(detalhes in comida){
-            if (comida.nome === nomeString) {
-                guardarNome = comida
-                console.log(guardarNome);
-                return guardarNome
-            }else{
-                alert ("Nenhum item foi encontrado")
-            }
+function outraFuncao(array, nomeNovoOutro){
+    let stringNomeOutra
+    for (item of array){
+        if(item.nome === nomeNovoOutro){
+            stringNomeOutra = item
         }
     }
+        if(stringNomeOutra){
+            console.log(stringNomeOutra) 
+        }else{
+            alert ('Nenhum item encontrado')
+        }      
 }
-retornarObjetos(arrayObjetosComida, "Lagarto ao Molho Madeira")
+
+outraFuncao(comida, "Filé com Legumes na manteiga")
+outraFuncao(comida, "Parmegiana")
 
 
