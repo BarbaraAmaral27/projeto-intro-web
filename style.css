@@ -1,0 +1,77 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+    padding: 20px;
+    background-color: rgb(207, 136, 6);
+    border-bottom: double rgb(244, 186, 186) 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /* display: flex; */
+}
+
+#titulo-importante {
+    color: white;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+
+.pesquisa {
+    padding: 5px 5px 5px 5px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+img {
+    height: 25vh;
+    width: 20vw;
+    
+}
+
+
+main {
+    margin: 15px;
+    width: 90vw;
+    height: 120vh;
+    text-align: center;
+    justify-content: center;
+}
+
+
+section {   
+    /* justify-content: center;  */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px double rgb(207, 136, 6);
+    text-align: center;
+}
+
+ul {
+    /* margin: 5px 5px 5px 5px; */
+    list-style:none; /*remover as bolinhas de uma lista não ordenada*/
+ 
+}
+
+h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    height: 70px;
+    padding: 10px;
+    background-color: rgb(178, 87, 17);
+    position: relative;
+}
+
+
