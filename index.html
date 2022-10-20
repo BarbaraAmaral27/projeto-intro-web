@@ -10,45 +10,70 @@
 </head>
 <body>
     <header>
-        <h1 id="titulo-importante">Comidas</h1>
+        <h1>Comidas</h1>
     </header>
     <main>
-        <article>
-            <form class="pesquisa">
-                <label for="pesquisa"></label>
-                <input type="text" name="pesquisa" id="pesquisa">
-                <button type="submit">Pesquisar</button>
-            </form>
-            <section>        
-                <ul>
-                    <img src="./imagens/parmegiana1.webp">
-                    <li><a href="https://receitas.globo.com/file-a-parmegiana-4da5117cb16c917d89000287.ghtml">Filé a Parmegiana</a></li>
+        <!-- <article>    -->
+        <div class = "pesquisar">   
+            <label for="pesquisa"></label>
+            <input type="text" name="pesquisa" id="pesquisa">
+            <button type="submit">Pesquisar</button>
+        </div>   
+        <div class="container-cards">
+        <section class="card">        
+                <img src="./imagens/parmegiana1.webp">
+                <ul>    
+                    <li>Nome: <a href="https://receitas.globo.com/file-a-parmegiana-4da5117cb16c917d89000287.ghtml" target="_blank">Filé a Parmegiana</a></li>
                     <li>Valor: R$45.00</li>
-                    <li>Opções do Prato: Molho Tradicional, Molho Bolonhesa, Molho Branco</li>
+                    <li>Opções: Molho Tradicional, Molho Bolonhesa, Molho Branco</li>
                 </ul>
             </section>    
-            <section>
+            <section class="card">
+                <img src="./imagens/strogonoff.jpg">
                 <ul>
-                    <img src="./imagens/strogonoff.jpg">
-                    <li><a href="https://receitas.globo.com/regionais/rpc/plug/strogonoff-de-carne.ghtml">Strogonoff</a></li>
+                    <li>Nome: <a href="https://receitas.globo.com/regionais/rpc/plug/strogonoff-de-carne.ghtml" target="_blank">Strogonoff</a></li>
                     <li>Valor: R$42.50</li>
-                    <li>Opções do Prato: Carne, Frango, Camarão</li>
+                    <li>Opções: Carne, Frango, Camarão</li>
                 </ul>
             </section>
-            <section>            
+            <section class="card">            
+                <img src="./imagens/file.jpg">
                 <ul>
-                    <img src="./imagens/file.jpg">
-                    <li><a href="https://www.tudogostoso.com.br/receita/134139-file-com-legumes-na-manteiga.html">Filé com Legumes na Manteiga</a></li>
+                    <li>Nome: <a href="https://www.tudogostoso.com.br/receita/134139-file-com-legumes-na-manteiga.html" target="_blank">Filé com Legumes na Manteiga</a></li>
                     <li>Valor: R$65.00</li>
-                    <li>Opções do Prato: Filé de Frango, Filé Mignon</li>
+                    <li>Opções: Filé de Frango, Filé Mignon</li>
                 </ul>
             </section>
-        </article>
+            <section class="card">            
+                <img src="./imagens/risoto.jpg">
+                <ul>
+                    <li>Nome: <a href="https://www.tudogostoso.com.br/receita/102863-risoto-de-queijo.html" target="_blank">Risoto de Queijo</a></li>
+                    <li>Valor: R$41.90</li>
+                    <li>Opções: Queijo, Frango, Palmito</li>
+                </ul>
+            </section>
+            <section class="card">            
+                <img src="./imagens/lagarto.jpg">
+                <ul>
+                    <li>Nome: <a href="https://www.tudogostoso.com.br/receita/79172-lagarto-recheado-ao-molho-madeira.html" target="_blank">Lagarto ao Molho Madeira</a></li>
+                    <li>Valor: R$49.90</li>
+                    <li>Opções: Carne</li>
+                </ul>
+            </section>
+            <section class="card">            
+                <img src="./imagens/cupim.jpg">
+                <ul>
+                    <li>Nome: <a href="https://www.tudogostoso.com.br/receita/90871-cupim-recheado.html" target="_blank">Cupim Recheado</a></li>
+                    <li>Valor: R$55.90</li>
+                    <li>Opções: Carne</li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer>
-        <h3>Bárbara M. Amaral</h3>
-        <h3>GitHub: BarbaraAmaral27</h3>
-    </footer>
-    
+        <h2>CRIADO POR BÁRBARA M. AMARAL - 2022</h2>
+        <a href="https://github.com/BarbaraAmaral27" target="_blank">
+        <button class="git">GitHub</button></a>
+    </footer>         
 </body>
 </html>

@@ -4,74 +4,88 @@ padding: 0;
 box-sizing: border-box;
 }
 
+body {
+    font-family: 'candara';
+    width: 100vw;
+}
+
 header {
-    height: 100px;
-    padding: 20px;
-    background-color: rgb(207, 136, 6);
-    border-bottom: double rgb(244, 186, 186) 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    letter-spacing: 0.1rem;
+    background-color: #ec6a00;
+    color: white;        
+    text-shadow: 1.5px 1.5px 1.5px rgb(3, 2, 2);
 }
 
-#titulo-importante {
-    color: white;
-    /* justify-content: center;
-    align-items: center; */
+.pesquisar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;   
+    height: 55px; 
+    background-color: #fcbe38;
+    color: white;   
 }
 
-
-
-.pesquisa {
-    padding: 5px 5px 5px 5px;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
+.container-cards {    
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    height: 75vh;
+    width: 100vw;        
+    justify-content: space-evenly;
+    margin-top: 4vh;
+    padding-bottom: 2vh;
 }
 
 img {
-    height: 25vh;
-    width: 20vw;
-    
+    height: 200px;
+    width: 300px; 
+    margin-top: 10px;  
 }
-
-
-main {
-    margin: 15px;
-    width: 90vw;
-    height: 120vh;
-    text-align: center;
-    justify-content: center;
-}
-
-
-section {   
-    /* justify-content: center;  */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    width: 550px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 3px double rgb(207, 136, 6);
-    text-align: center;
-}
-
 ul {
     /* margin: 5px 5px 5px 5px; */
-    list-style:none; /*remover as bolinhas de uma lista não ordenada*/
- 
+    list-style:none; /*remover as bolinhas de uma lista não ordenada*/  
 }
 
-h3 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    text-align: center;
+.card {
+    border: 2px solid orange;
+    height: 300px;
+    width: 600px;
+    gap:10px ;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    border-radius: 15px;
 }
 
 footer {
-    height: 70px;
-    padding: 10px;
-    background-color: rgb(178, 87, 17);
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ec6a00;
+    color: white;
+    height: 8vh; 
+    width: 100vw;   
+    gap: 5px;
+    align-items: center;
+    justify-content:center;    
+    font-size: small;  
+    align-self: baseline;  
 }
 
-
+.git {
+    height: 25px;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid rgb(249, 239, 239);
+    background-color:#a95714;
+    color: white;   
+    box-shadow: 1px 2px 2px rgb(65, 2, 2); 
+}
