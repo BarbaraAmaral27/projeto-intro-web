@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comidas</title>
-    <script src="index.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
@@ -13,61 +13,12 @@
         <h1>Comidas</h1>
     </header>
     <main>
-        <!-- <article>    -->
         <div class = "pesquisar">   
             <label for="pesquisa"></label>
             <input type="text" name="pesquisa" id="pesquisa">
-            <button type="submit">Pesquisar</button>
+            <button type="submit" id="buscar" onclick="pesquisarNome(event)">Pesquisar</button>
         </div>   
-        <div class="container-cards">
-        <section class="card">        
-                <img src="./imagens/parmegiana1.webp">
-                <ul>    
-                    <li>Nome: <a href="https://receitas.globo.com/file-a-parmegiana-4da5117cb16c917d89000287.ghtml" target="_blank">Filé a Parmegiana</a></li>
-                    <li>Valor: R$45.00</li>
-                    <li>Opções: Molho Tradicional, Molho Bolonhesa, Molho Branco</li>
-                </ul>
-            </section>    
-            <section class="card">
-                <img src="./imagens/strogonoff.jpg">
-                <ul>
-                    <li>Nome: <a href="https://receitas.globo.com/regionais/rpc/plug/strogonoff-de-carne.ghtml" target="_blank">Strogonoff</a></li>
-                    <li>Valor: R$42.50</li>
-                    <li>Opções: Carne, Frango, Camarão</li>
-                </ul>
-            </section>
-            <section class="card">            
-                <img src="./imagens/file.jpg">
-                <ul>
-                    <li>Nome: <a href="https://www.tudogostoso.com.br/receita/134139-file-com-legumes-na-manteiga.html" target="_blank">Filé com Legumes na Manteiga</a></li>
-                    <li>Valor: R$65.00</li>
-                    <li>Opções: Filé de Frango, Filé Mignon</li>
-                </ul>
-            </section>
-            <section class="card">            
-                <img src="./imagens/risoto.jpg">
-                <ul>
-                    <li>Nome: <a href="https://www.tudogostoso.com.br/receita/102863-risoto-de-queijo.html" target="_blank">Risoto de Queijo</a></li>
-                    <li>Valor: R$41.90</li>
-                    <li>Opções: Queijo, Frango, Palmito</li>
-                </ul>
-            </section>
-            <section class="card">            
-                <img src="./imagens/lagarto.jpg">
-                <ul>
-                    <li>Nome: <a href="https://www.tudogostoso.com.br/receita/79172-lagarto-recheado-ao-molho-madeira.html" target="_blank">Lagarto ao Molho Madeira</a></li>
-                    <li>Valor: R$49.90</li>
-                    <li>Opções: Carne</li>
-                </ul>
-            </section>
-            <section class="card">            
-                <img src="./imagens/cupim.jpg">
-                <ul>
-                    <li>Nome: <a href="https://www.tudogostoso.com.br/receita/90871-cupim-recheado.html" target="_blank">Cupim Recheado</a></li>
-                    <li>Valor: R$55.90</li>
-                    <li>Opções: Carne</li>
-                </ul>
-            </section>
+        <div class="container-cards">        
         </div>
     </main>
     <footer>

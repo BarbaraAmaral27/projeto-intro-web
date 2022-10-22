@@ -1,7 +1,36 @@
+// const comida1 = "Parmegiana";
+// const valorComida1 = 45.00;
+// const fileComida1 = true;
+// const opcoesPrato1 = ["Molho Bolonhesa"," Molho Branco"," Molho Madeira"]
+
+// const comida2 = "Strogonoff";
+// const valorComida2 = 42.50;
+// const fileComida2 = false;
+// const opcoesPrato2 = ["Carne"," Frango"," Camarão"]
+
+// const comida3 = "Filé com Legumes na manteiga";
+// const valorComida3 = 65.00;
+// const fileComida3 = true;
+// const opcoesPrato3 = ["Filé de Frango"," Filé Mignon"]
+
+// const media = ((valorComida1 + valorComida2 + valorComida3)/3)
+
+// console.log("A média dos pratos é: R$" + media)
+
+// const verificaComidas = (fileComida1 && fileComida2 && fileComida3)
+// console.log("Os valores das váriaveis são: " + verificaComidas);
+
+// const comidaMaiuscula1 = comida1.toLocaleUpperCase()
+// const comidaMaiuscula2 = comida2.toLocaleUpperCase()
+// const comidaMaiuscula3 = comida3.toLocaleUpperCase()
+
+// console.log(comidaMaiuscula1 + "\nValor do Prato: R$" + valorComida1 + "\nÉ filé Mignon: " + fileComida1 + "\nOpções do prato: " + opcoesPrato1)
+// console.log(comidaMaiuscula2 + "\nValor do Prato: R$" + valorComida2 + "\nÉ filé Mignon: " + fileComida2 + "\nOpções do prato: " + opcoesPrato2)
+// console.log(comidaMaiuscula3 + "\nValor do Prato: R$" + valorComida3 + "\nÉ filé Mignon: " + fileComida3 + "\nOpções do prato: " + opcoesPrato3)
+
 // Exercício 1 - Semana 2
 
 // 1. Transforme os itens que criamos nas últimas semanas em objetos.
-
 objeto1 = {
     nome : "Parmegiana",
     valor:45.00,
@@ -16,7 +45,6 @@ objeto2 = {
     fileComida: false,
     opcoes:["Carne"," Frango"," Camarão"],
     imagem: "./imagens/strogonoff.jpg"
-
 }
 
 objeto3 = {
@@ -25,8 +53,11 @@ objeto3 = {
     fileComida: true,
     opcoes:["Filé de Frango"," Filé Mignon"],
     imagem: "./imagens/file.jpg"
-
 }
+
+//Calculo média dos valores dos objetos
+const media = (objeto1.valor + objeto2.valor + objeto3.valor)/3
+console.log("A média dos pratos é: R$" + media.toFixed(2))
 
 // Exercício 2 - Semana 2
 
@@ -41,7 +72,6 @@ comida = []
 comida.push(objeto1, objeto2, objeto3)
 console.log(comida)
 
-
 // Exercício 4 e // Exercício 5 - Semana 2
 
 // 4. Altere o item 3 “Adicione os novos objetos no array de objetos, utilizando o push()”, para criar uma verificação antes de dar o push. A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for true;
@@ -50,20 +80,23 @@ console.log(comida)
 
 if (objeto1.fileComida === true){
     comida.push(objeto1)
+    console.log(objeto1.fileComida)
 }else {
     alert("Objeto 1 não adicionado ao array")
 }
 
 if (objeto2.fileComida === true){
     comida.push(objeto2)
+    console.log(objeto2.fileComida)
 }else {
     alert("Objeto 2 não adicionado ao array")
 }
 
 if (objeto3.fileComida === true){
     comida.push(objeto3)
+    console.log(objeto3.fileComida)
 }else {
-    alert("Obejto 1 não adicionado ao array")
+    alert("Obejto 3 não adicionado ao array")
 }
 
 console.log(comida)
@@ -76,8 +109,8 @@ console.log(comida)
 //1. Reescrevendo o relatório criado que foi feito na semana 1, altere a forma que a característica do tipo array dos itens seja escrita como um laço que guarde todos os valores da propriedade array do objeto em uma mesma string. Utilize esta string no relatório.
 
 //Desta forma
-let comidaString = ""
 
+let comidaString = ""
 for (let i = 0; i < objeto1.opcoes.length; i++){
     comidaString += objeto1.opcoes[i]
 }
@@ -100,8 +133,8 @@ console.log("------------------------");
 
 // //Ou Desta forma
 
-// for (let abacaxi in objeto1) {
-//     console.log(objeto1[abacaxi].toString());
+// for (let propriedade in objeto1) {
+//     console.log(objeto1[propriedade].toString());
 // }
 
 
@@ -162,7 +195,6 @@ funcaoString(objeto3);
 //Exercício 4 - Semana 3
 
 // 4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
-
 function outraFuncao(array, nomeNovoOutro){
     let stringNomeOutra
     for (item of array){
@@ -183,34 +215,76 @@ outraFuncao(comida, "Parmegiana")
 
 console.log("------------------------");
 
+//Semana 6 - final
 
-// //1. Altere seu código para que a tela de lista de itens crie os elementos da lista através de manipulação do DOM.
-// const ul = document.createElement("ul")
-// const criarPrimeiraLi = document.createElement("li")
-// const criarSegundaLi = document.createElement("li")
-// const criarTerceiraLi = document.createElement("li")
+//Array de objetos criado para usar na criação dos cards do html
+arraysHtml = []
+arraysHtml.push(objeto1, objeto2, objeto3, objeto4, objeto5, objeto6)
+console.log(arraysHtml)
 
-// //Atualmente, seus elementos estão criados no HTML e no CSS de forma estática, sem que exista interação entre HTML e CSS e o Script que criamos. A ideia é que agora, os dados que compõem os elementos HTML devem ser criados a partir do nosso código JS. Para isso, devemos manipular os objetos do HTML e do CSS utilizando o DOM.
-// const adicionarUl = novaUl.appendChild(ul)
+//1. Altere seu código para que a tela de lista de itens crie os elementos da lista através de manipulação do DOM.
+function createHtml(array){
+let criarContainer = document.getElementsByClassName('container-cards')[0]
+    criarContainer.innerHTML=""
+    let card = ""
+    array.map(element => {
+    card = `<section class="card">
+        <img src="${element.imagem}">
+        <ul>
+            <li>Nome: ${element.nome.toUpperCase()}</li>
+            <li>Valor: ${element.valor}</li>
+            <li>FileComida: ${element.fileComida}</li>
+            <li>Opções: ${element.opcoes}</li>
+        </ul>
+        </section>`
+        criarContainer.innerHTML+= card;
+    });
+}
+createHtml(arraysHtml)
 
-// const adicionarPrimeiraLi = novaUl.appendChild(criarPrimeiraLi)
-// adicionarPrimeiraLi.innerHTML = "Nome: " + objeto1.nome.toUpperCase();
+//Buscar objetos dentro do meu array, através do campo pesquisar
+function pesquisarArrayPorNome(array, nomePrato){
+    const filtrar = array.filter((item) => item.nome.toLowerCase().includes(nomePrato.toLowerCase()));
 
-// const adicionarSegundaLi = novaUl.appendChild(criarSegundaLi)
-// adicionarSegundaLi.innerHTML = "Valor: " + objeto1.valor.toUpperCase();
+    if (filtrar.length){
+        return filtrar;
+    }else{
+        return array;
+    }  
+}
 
-// const adicionarTerceiraLi = novaUl.appendChild(criarTerceiraLi)
-// adicionarTerceiraLi.innerHTML = "Opções: " + objeto1.opcoes.toUpperCase();
+//Limpar campos de pesquisa
+function limparCamposInput(){
+    document.getElementById("pesquisa").value="";
+} 
 
-// // -------------------------------------------------------------------------------
-// const adicionarPrimeiraLi = novaUl.appendChild(criarPrimeiraLi)
-// adicionarPrimeiraLi.innerHTML = "Nome: " + objeto2.nome.toUpperCase();
+//Função que pega o valor do input, fazendo a chamada da função que pesquisa os objetos do meu array
+function pesquisarNome(event){
+    event.preventDefault()
 
-// const adicionarSegundaLi = novaUl.appendChild(criarSegundaLi)
-// adicionarSegundaLi.innerHTML = "Valor: " + objeto2.valor.toUpperCase();
+    const input = document.getElementById("pesquisa").value;
+    const filtrarNome = pesquisarArrayPorNome(arraysHtml, input);
 
-// const adicionarTerceiraLi = novaUl.appendChild(criarTerceiraLi)
-// adicionarTerceiraLi.innerHTML = "Opções: " + objeto2.opcoes.toUpperCase();
+    if(input === ''){
+        alert('Digite um nome válido!');
+        createHtml(arraysHtml);
+    }else{
+        console.log(filtrarNome);
+        createHtml(filtrarNome);
+    }
+    console.log(filtrarNome.includes(input));
+    limparCamposInput()
+}
 
-// // -------------------------------------------------------------------------------
+//Botão Enter para efetuar pesquisa no meu input
+const botaoInput = document.getElementById("pesquisa"); 
+botaoInput.addEventListener("keyup", function(event) {
+    if(event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("buscar").click();
+    }
+})
+
+
+
 
