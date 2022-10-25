@@ -82,21 +82,21 @@ if (objeto1.fileComida === true){
     comida.push(objeto1)
     console.log(objeto1.fileComida)
 }else {
-    alert("Objeto 1 não adicionado ao array")
+    console.log("Objeto 1 não adicionado ao array")
 }
 
 if (objeto2.fileComida === true){
     comida.push(objeto2)
     console.log(objeto2.fileComida)
 }else {
-    alert("Objeto 2 não adicionado ao array")
+    console.log("Objeto 2 não adicionado ao array")
 }
 
 if (objeto3.fileComida === true){
     comida.push(objeto3)
     console.log(objeto3.fileComida)
 }else {
-    alert("Obejto 3 não adicionado ao array")
+    console.log("Obejto 3 não adicionado ao array")
 }
 
 console.log(comida)
@@ -205,7 +205,7 @@ function outraFuncao(array, nomeNovoOutro){
         if(stringNomeOutra){
             console.log(stringNomeOutra) 
         }else{
-            alert ('Nenhum item encontrado')
+            console.log('Nenhum item encontrado')
         }      
 }
 
@@ -231,10 +231,9 @@ let criarContainer = document.getElementsByClassName('container-cards')[0]
     card = `<section class="card">
         <img src="${element.imagem}">
         <ul>
-            <li>Nome: ${element.nome.toUpperCase()}</li>
-            <li>Valor: ${element.valor}</li>
-            <li>FileComida: ${element.fileComida}</li>
-            <li>Opções: ${element.opcoes}</li>
+            <li><b> ${element.nome.toUpperCase()}</b></li>
+            <li><b> R$</b> ${element.valor.toFixed(2)}</li>
+            <li><b>Opções:</b> ${element.opcoes}</li>
         </ul>
         </section>`
         criarContainer.innerHTML+= card;
